@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="co.example.chenao.operacionesmatematicas.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPERACIONES MATEMATICAS"
+        android:textSize="23sp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/logo1"
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/campo1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@android:color/background_light"
+        android:hint="Ingrese el numero 1"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/campo2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@android:color/background_light"
+        android:hint="Ingrese el numero 2"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSuma"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnResta"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnSuma"
+            android:layout_toEndOf="@+id/btnSuma"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnResta"
+            android:layout_toEndOf="@+id/btnResta"
+            android:textColor="@android:color/holo_blue_dark"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMulti"
+            android:layout_toEndOf="@+id/btnMulti"
+            android:textColor="@android:color/holo_blue_dark"
+            android:onClick="onClick"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/etiResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textColor="#ffff"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
