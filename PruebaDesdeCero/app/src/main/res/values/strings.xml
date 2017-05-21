@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PruebaDesdeCero</string>
+
+    <string name="titulo">BIENVENIDO AL EJEMPLO</string>
+    <string name="text_btn_ingresar">Ingresar Nombre</string>
+    <string name="text_msj_bienvenido">Hola, Bienvenido, un saludo... </string>
+
+</resources>
