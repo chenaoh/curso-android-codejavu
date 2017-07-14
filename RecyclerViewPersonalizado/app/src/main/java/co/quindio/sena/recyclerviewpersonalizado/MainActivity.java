@@ -2,8 +2,11 @@ package co.quindio.sena.recyclerviewpersonalizado;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -17,14 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listaPersonajes=new ArrayList<>();
-        recyclerPersonajes= (RecyclerView) findViewById(R.id.RecyclerId);
-        recyclerPersonajes.setLayoutManager(new LinearLayoutManager(this));
-
-        llenarPersonajes();
-
-        AdaptadorPersonajes adapter=new AdaptadorPersonajes(listaPersonajes);
-        recyclerPersonajes.setAdapter(adapter);
+        construirRecycler();
 
     }
 
@@ -38,5 +34,43 @@ public class MainActivity extends AppCompatActivity {
         listaPersonajes.add(new PersonajeVo("Flanders","Nedward «Ned» Flanders es un personaje ficticio de la serie de televisión de dibujos animados Los Simpson. La voz original en inglés es de Harry Shearer.",R.drawable.flanders));
         listaPersonajes.add(new PersonajeVo("Milhouse","Milhouse Mussolini Van Houten es un personaje ficticio de la serie animada Los Simpson, creado por Matt Groening.",R.drawable.milhouse));
         listaPersonajes.add(new PersonajeVo("Mr. Burns","Charles Montgomery Burns, más conocido como el señor Burns o Monty Burns, es un personaje ficticio recurrente de la serie de televisión de dibujos animados Los Simpson, creada por Matt Groening.",R.drawable.burns));
+    }
+
+    public void onClick(View view) {
+
+        switch (view.getId()){
+            case R.id.btnList: Utilidades.visualizacion=Utilidades.LIST;
+                break;
+            case R.id.btnGrid: Utilidades.visualizacion=Utilidades.GRID;
+                break;
+        }
+        construirRecycler();
+    }
+
+    private void construirRecycler() {
+        listaPersonajes=new ArrayList<>();
+        recyclerPersonajes= (RecyclerView) findViewById(R.id.RecyclerId);
+
+        if (Utilidades.visualizacion==Utilidades.LIST){
+            recyclerPersonajes.setLayoutManager(new LinearLayoutManager(this));
+        }else {
+            recyclerPersonajes.setLayoutManager(new GridLayoutManager(this,3));
+        }
+
+        llenarPersonajes();
+
+        AdaptadorPersonajes adapter=new AdaptadorPersonajes(listaPersonajes);
+
+        adapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),
+                        "Selección: "+listaPersonajes.get
+                                (recyclerPersonajes.getChildAdapterPosition(view))
+                                .getNombre(),Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        recyclerPersonajes.setAdapter(adapter);
     }
 }
