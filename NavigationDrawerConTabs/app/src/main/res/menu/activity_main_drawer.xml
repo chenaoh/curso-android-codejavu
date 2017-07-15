@@ -24,8 +24,8 @@
                 android:title="TABS" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:icon="@drawable/goku_cara"
+                android:title="Lista" />
         </menu>
     </item>
 

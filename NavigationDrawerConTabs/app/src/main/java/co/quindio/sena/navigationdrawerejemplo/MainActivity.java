@@ -19,12 +19,14 @@ import co.quindio.sena.navigationdrawerejemplo.clases.Utilidades;
 import co.quindio.sena.navigationdrawerejemplo.fragments.ContenedorFragment;
 import co.quindio.sena.navigationdrawerejemplo.fragments.FormularioFragment;
 import co.quindio.sena.navigationdrawerejemplo.fragments.GreenFragment;
+import co.quindio.sena.navigationdrawerejemplo.fragments.ListaPersonajesFragment;
 import co.quindio.sena.navigationdrawerejemplo.fragments.RedFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         RedFragment.OnFragmentInteractionListener,GreenFragment.OnFragmentInteractionListener,
-        FormularioFragment.OnFragmentInteractionListener,ContenedorFragment.OnFragmentInteractionListener {
+        FormularioFragment.OnFragmentInteractionListener,ContenedorFragment.OnFragmentInteractionListener,
+        ListaPersonajesFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,7 +118,8 @@ public class MainActivity extends AppCompatActivity
             miFragment=new ContenedorFragment();
             fragmentSeleccionado=true;
         } else if (id == R.id.nav_send) {
-
+            miFragment=new ListaPersonajesFragment();
+            fragmentSeleccionado=true;
         }
 
         if (fragmentSeleccionado==true){
