@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">EjemploMaestroDetalle</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Goku -->
+    <string name="goku_nombre">Goku</string>
+    <string name="goku_descripcion_corta">Son Gokū es el protagonista del manga y anime Dragon Ball creado por Akira Toriyama.</string>
+    <string name="goku_descripcion_Larga">Son Gokū es el protagonista del manga y anime Dragon Ball creado por Akira Toriyama,
+        Al comienzo de la historia, Gokū aparece como un joven artista marcial con cola de mono y fuerza sobrehumana,
+        más adelante se revela que es un extraterrestre de la raza ficticia saiyajin y que su nombre original es Kakarotto</string>
+
+    <!-- Gohan -->
+    <string name="gohan_nombre">Gohan</string>
+    <string name="gohan_descripcion_corta">Son Gohan es un personaje del manga y anime Dragon Ball creado por Akira Toriyama.</string>
+    <string name="gohan_descripcion_Larga">Son Gohan es un personaje del manga y anime Dragon Ball creado por Akira Toriyama.
+    Es el primer hijo de Son Gokū y Chi-Chi, hermano mayor de Son Goten, esposo de Videl y padre de Pan.</string>
+
+    <!-- Goten -->
+    <string name="goten_nombre">Goten</string>
+    <string name="goten_descripcion_corta">Goten es un personaje ficticio de la serie de manga y anime Dragon Ball. </string>
+    <string name="goten_descripcion_Larga">Goten es un personaje ficticio de la serie de manga y anime Dragon Ball.
+        Segundo hijo del protagonista, Goku, y Chichi/Milk. Se transformó en Super Saiyajin desde pequeño y hace la técnica de la fusión con Trunks.</string>
+
+    <!-- Krilin -->
+    <string name="krilin_nombre">Krilin</string>
+    <string name="krilin_descripcion_corta">Krilin es un personaje de la serie de manga y anime Dragon Ball.</string>
+    <string name="krilin_descripcion_Larga">Krilin es un personaje de la serie de manga y anime Dragon Ball.
+     Es el primer rival en artes marciales de Son Gokū aunque luego se convierte en su mejor amigo. Mide 1,58 cm y pesa 55 kg.</string>
+
+    <!-- Picoro -->
+    <string name="picoro_nombre">Picoro</string>
+    <string name="picoro_descripcion_corta">Picoro o Piccolo es un personaje de ficción de la serie de manga y anime Dragon Ball.</string>
+    <string name="picoro_descripcion_Larga">Picoro o Piccolo es un personaje de ficción de la serie de manga y anime Dragon Ball.
+    Su padre, Piccolo Daimaō, surgió tras separarse de Kamisama. Así, si uno de los dos muere, el otro también. Odia a su alter ego,
+        aunque es mucho más fuerte y menos malvado que su padre </string>
+
+    <!-- Vegueta -->
+    <string name="vegueta_nombre">Vegueta</string>
+    <string name="vegueta_descripcion_corta">Vegeta es un personaje ficticio perteneciente a la raza llamada saiyajin, del manga y anime Dragon Ball.</string>
+    <string name="vegueta_descripcion_Larga">Vegeta es un personaje ficticio perteneciente a la raza llamada saiyajin, del manga y anime Dragon Ball.
+    Su nombre proviene de su padre, el Rey Vegeta, así como de su planeta de origen, el cual recibió su nombre tras su conquista por parte de los saiyajin. </string>
+
+    <!-- Trunks -->
+    <string name="trunks_nombre">Trunks</string>
+    <string name="trunks_descripcion_corta">Trunks es un personaje de ficción de la serie de manga y anime Dragon Ball de Akira Toriyama. </string>
+    <string name="trunks_descripcion_Larga">Trunks es un personaje de ficción de la serie de manga y anime Dragon Ball de Akira Toriyama.
+        Hizo su primera aparición en el capitulo #331 "El joven misterioso", publicado en la revista Shūkan Shōnen Jump el 15 de julio de 1991.</string>
+
+
+</resources>
