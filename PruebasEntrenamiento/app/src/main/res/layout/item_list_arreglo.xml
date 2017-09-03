@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:textSize="75dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.86"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cristian David Henao"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="16dp"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27 años"
+                android:textSize="13dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/tvTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3113841824"
+                android:textSize="13dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/tvDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Armenia Quindio"
+                android:textSize="13dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/tvProfesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tecnologo en analisis y desarrollo de sistemas de informacion"
+                android:textSize="13dp"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
