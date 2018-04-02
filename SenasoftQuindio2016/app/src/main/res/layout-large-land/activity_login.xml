@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_nav"
+    tools:context="co.quindio.sena.senasoftquindio2016.activities.LoginActivity">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/logo_completo"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="80dp" />
+
+            <Button
+                android:id="@+id/btnGooglePlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresar con google+"
+                android:background="@color/colorBtnGplus"
+                android:textColor="@color/colorTextBtnGplus"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginRight="300dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClick"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:layout_weight="1"
+                    android:id="@+id/btnFacebook"
+                    android:background="@color/colorBtnFace"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginRight="5dp"
+                    android:onClick="onClick"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Twiter"
+                    android:layout_weight="1"
+                    android:id="@+id/btnTwitter"
+                    android:background="@color/colorBtnTwit"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="300dp"
+                    android:onClick="onClick"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegistrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrate"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_marginRight="300dp"
+                android:onClick="onClick"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7AB51D</color>
+    <color name="colorPrimaryDark">#689F38</color>
+    <color name="colorAccent">#009688</color>
+
+    <color name="colorDarkVersion1">#00354B</color>
+    <color name="colorPrimaryVersion1">#0C5C7D</color>
+    <color name="colorDarkVersion2">#00354b</color>
+
+    <color name="colorBtnGplus">#F3F3F3</color>
+    <color name="colorBtnFace">#3C589E</color>
+    <color name="colorBtnTwit">#2DAAE1</color>
+    <color name="colorTextBtnGplus">#AA100C</color>
+
+    <color name="fondo_transparente">#81000000</color>
+    <color name="fondo_transparente_primary">#cf0c5c7d</color>
+
+    <color name="fondo_blanco">#ffffff</color>
+
+</resources>

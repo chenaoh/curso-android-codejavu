@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.QueEsFragment"
+    android:weightSum="1">
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <!-- Info que es -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿Qué es?"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="25sp"
+                        android:layout_marginRight="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="0.48">
+
+                            <TextView
+                                android:layout_width="451dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="@string/texto_que_es"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:layout_width="451dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="@string/texto_que_es2"
+                                android:textSize="15sp"
+                                android:layout_margin="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Versiones"
+                                android:layout_gravity="right"
+                                android:textColor="@color/colorAccent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp" />
+
+                            <ImageView
+                                android:layout_width="380dp"
+                                android:layout_height="220dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/versiones"
+                                android:layout_gravity="right" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- Info Participantes -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Participantes."
+                            android:textColor="@color/colorAccent"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="25sp"
+                            android:layout_marginRight="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="0.48"
+                                android:layout_marginLeft="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="@string/texto_dirigido_aprendices"
+                                    android:id="@+id/textViewTituloAprendices"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="20dp" />
+
+                                <TextView
+                                    android:layout_width="380dp"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="@string/texto_dirigido_a"
+                                    android:id="@+id/textViewTexto"
+                                    android:textSize="15sp"
+                                    android:layout_margin="10dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="@string/texto_dirigido_comunidad_sena"
+                                    android:id="@+id/textViewTitul2"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="@string/texto_dirigido_empresarios"
+                                    android:id="@+id/textViewTitul3"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="25dp"/>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="450dp"
+                                android:layout_height="280dp"
+                                android:scaleType="fitXY"
+                                android:id="@+id/imagenAprendices"
+                                android:src="@drawable/aprendices_sena"
+                                android:layout_gravity="right" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

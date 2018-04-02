@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.ParticipantesFragment"
+    android:weightSum="1">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/aprendices_sena"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/texto_dirigido_aprendices"
+                android:id="@+id/textViewTitulo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/texto_dirigido_a"
+                android:id="@+id/textViewTexto"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/texto_dirigido_comunidad_sena"
+                android:id="@+id/textViewTitul2"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/texto_dirigido_empresarios"
+                android:id="@+id/textViewTitul3"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="25dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

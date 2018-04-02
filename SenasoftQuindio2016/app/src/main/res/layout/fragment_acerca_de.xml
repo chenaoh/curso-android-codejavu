@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acerca_de_cel"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.AcercaDeFragment">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/logo_completo"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/imageView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regional"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUINDÍO."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carlos Fabío Álvarez Ángel. \nDirector Regional."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centro"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centro de Comercio y Turismo."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diseño"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ferney Vargas Jaramillo."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Andrea Velásquez Torres."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manuel Arias."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desarrollo"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cristian David Henao."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hebert Yovanny Lopez."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hugo Hernán Henao."
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:textSize="33sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

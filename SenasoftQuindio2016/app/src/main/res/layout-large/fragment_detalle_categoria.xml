@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.DetalleCategoriaFragment"
+    android:weightSum="1">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layoutId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryVersion1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/imgCategoria"
+                        android:src="@drawable/android_ico" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewDia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Objetivo"
+                            android:textSize="25sp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/colorBtnGplus" />
+
+                        <TextView
+                            android:id="@+id/txtobjetivo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Java Web"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorBtnGplus" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDescObjetivo"
+                    android:text="@string/algoritmiaDescrip"
+                    android:textColor="@color/colorBtnGplus"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryVersion1"/>
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/btnAtras"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_flecha_atras"
+                android:layout_marginTop="-10dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/textViewTematica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temática"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/layoutId"
+                android:gravity="left" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_tematica_categoria"
+                android:layout_below="@+id/textViewTematica"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descargar Lineamiento"
+                android:id="@+id/textView94"
+                android:layout_below="@+id/list_tematica_categoria"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="22dp" />
+
+            <ImageButton
+                android:onClick="descargaLineamientos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnLineamientos"
+                android:background="@drawable/pdf"
+                android:layout_below="@+id/textView94"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:paddingBottom="22dp"
+                android:layout_marginBottom="10dp" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="190dp"
+        android:src="@drawable/triangulitos"
+        android:scaleType="fitXY"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

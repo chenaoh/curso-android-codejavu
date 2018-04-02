@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.QueEsFragment"
+    android:weightSum="1">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/logo_completo"
+                android:layout_marginBottom="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Qué es?"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25sp"
+                    android:layout_marginRight="20dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/texto_que_es"
+                    android:id="@+id/textViewTexto3"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:inputType="textMultiLine"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/texto_que_es2"
+                android:id="@+id/textViewTexto2"
+                android:textSize="15sp"
+                android:inputType="textMultiLine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Versiones"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="left" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/versiones"
+                android:layout_gravity="center_horizontal|top"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

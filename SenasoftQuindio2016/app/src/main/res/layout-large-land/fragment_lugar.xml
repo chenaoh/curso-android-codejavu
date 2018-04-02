@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.LugarFragment"
+    >
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lugar"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25sp"
+                    android:layout_marginRight="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/texto_lugar"
+                android:id="@+id/textViewTexto"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/texto_lugar_dirigido"
+                android:id="@+id/textViewTexto2"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp" />
+
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imagenes del Sitio"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="left" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollImagenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="300dp"
+                       android:layout_height="180dp"
+                       android:src="@drawable/convenciones1"
+                       android:scaleType="fitXY"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginRight="5dp"
+                       android:layout_marginLeft="5dp"
+                       android:layout_alignLeft="@+id/imageButtonAtras"
+                       android:layout_alignStart="@+id/imageButtonAtras" />
+
+                   <ImageView
+                       android:layout_width="300dp"
+                       android:layout_height="180dp"
+                       android:src="@drawable/convenciones2"
+                       android:scaleType="fitXY"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginRight="5dp"
+                       android:layout_marginLeft="5dp"
+                       android:layout_alignLeft="@+id/imageButtonAtras"
+                       android:layout_alignStart="@+id/imageButtonAtras" />
+
+                   <ImageView
+                       android:layout_width="300dp"
+                       android:layout_height="180dp"
+                       android:src="@drawable/convenciones3"
+                       android:scaleType="fitXY"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginRight="5dp"
+                       android:layout_marginLeft="5dp"
+                       android:layout_alignLeft="@+id/imageButtonAtras"
+                       android:layout_alignStart="@+id/imageButtonAtras" />
+
+               </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

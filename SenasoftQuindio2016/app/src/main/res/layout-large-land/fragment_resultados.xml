@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/resultadosLand7"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.ResultadosFragment">
+
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo_color"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:text=" "
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_card_resultados" />
+
+</LinearLayout>

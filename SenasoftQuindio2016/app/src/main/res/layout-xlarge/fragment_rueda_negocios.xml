@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.RuedaNegociosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/creamaslogo"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:text=" "
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_info_creamas"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDQueEs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Qué es?"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="left" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_creamas_que_es"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_object_creamas"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDQueEs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Objetivos"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="left" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_creamas_objetivos"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_estrategia_creamas"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDQueEs3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estrategia"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="left" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_creamas_descripcion"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="280dp"
+            android:src="@drawable/triangulitos"
+            android:scaleType="fitXY"
+            android:layout_marginRight="-80dp"
+            android:layout_marginBottom="-60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

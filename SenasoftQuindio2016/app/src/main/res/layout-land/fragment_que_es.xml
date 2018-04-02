@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.QueEsFragment"
+    android:weightSum="1">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="left|top"
+                    android:src="@drawable/logo_color"
+                    />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.06">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¿Qué es?"
+                            android:textColor="@color/colorAccent"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="25sp"
+                            android:layout_marginRight="20dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/texto_que_es_land1"
+                        android:id="@+id/textViewTexto3"
+                        android:textSize="15sp"
+                        android:inputType="textMultiLine"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/texto_que_es_land2"
+                android:id="@+id/textViewTexto4"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:inputType="textMultiLine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/texto_que_es2"
+                android:id="@+id/textViewTexto2"
+                android:textSize="15sp"
+                android:inputType="textMultiLine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Versiones"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="left" />
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="350dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/versiones"
+                android:layout_gravity="center_horizontal|top"
+                android:scaleType="fitStart" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

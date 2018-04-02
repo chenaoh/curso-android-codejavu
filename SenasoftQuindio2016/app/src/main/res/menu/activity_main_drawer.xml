@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_informacion"
+            android:icon="@mipmap/ic_acerca_senasoft"
+            android:title="@string/item_informacion"/>
+        <item
+            android:id="@+id/nav_categorias"
+            android:icon="@mipmap/ic_categorias"
+            android:title="@string/item_categorias"/>
+        <item
+            android:id="@+id/nav_resultados"
+            android:icon="@mipmap/ic_resultados"
+            android:title="Resultados"/>
+        <item
+            android:id="@+id/nav_agenda"
+            android:icon="@mipmap/ic_agenda_academica"
+            android:title="@string/item_agenda" />
+        <item
+            android:id="@+id/nav_rueda"
+            android:icon="@mipmap/ic_rueda"
+            android:title="@string/item_rueda" />
+        <item
+            android:id="@+id/nav_proyectos"
+            android:icon="@mipmap/ic_muestra_comercial"
+            android:title="@string/item_muestra" />
+        <item
+            android:id="@+id/nav_creamas"
+            android:icon="@mipmap/ic_creamas"
+            android:title="@string/item_creamas" />
+
+    </group>
+
+    <item android:title="SENASoftApp">
+        <menu>
+            <item
+                android:id="@+id/nav_acerca"
+                android:icon="@mipmap/ic_acerca_de_app"
+                android:title="Acerca De..."
+                android:checkable="true" />
+         </menu>
+    </item>
+
+</menu>

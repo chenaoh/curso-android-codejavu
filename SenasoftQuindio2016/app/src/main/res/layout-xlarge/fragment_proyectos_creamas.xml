@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/proyectosCreamas10"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.ProyectosCreamasFragment">
+
+    <TextView
+        android:id="@+id/textProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectandose... "
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="83dp"
+        android:layout_alignTop="@+id/progress"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:gravity="center_horizontal" />
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="535dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false" />
+
+    <TextView
+        android:id="@+id/txtinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagenSinConexion"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/without_connection"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerInParent="true" />
+
+
+        <TextView
+            android:id="@+id/textViewProyectos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proyectos"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="left" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_card_projects"
+        android:layout_below="@+id/textViewProyectos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"/>
+
+
+
+</RelativeLayout>

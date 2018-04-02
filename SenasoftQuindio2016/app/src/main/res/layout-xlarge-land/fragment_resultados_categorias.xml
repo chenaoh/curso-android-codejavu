@@ -1,0 +1,170 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/resultadosCategoriaLand10"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.ResultadosCategoriasFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryVersion1">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgCategoria"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/android_ico" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultados"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBtnGplus" />
+
+            <TextView
+                android:id="@+id/textViewCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Java Web"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorBtnGplus" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="10sp"
+        android:textColor="@color/colorBtnGplus"
+        android:background="@color/colorPrimaryVersion1"
+        android:gravity="right"
+        android:layout_below="@+id/layoutId"/>
+
+    <ImageButton
+        android:id="@+id/btnAtras"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_flecha_atras"
+        android:layout_marginTop="-10dp"
+        android:background="@android:color/transparent"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="135dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutValidacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_below="@+id/txtinfo"
+        android:layout_marginBottom="20dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtinfoCreamas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/validacion_creamas"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dia 1 (25 de Octubre)"
+                    android:textColor="@color/colorPrimaryVersion1"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/validacion_creamas_dia1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dia 2 (26 de Octubre)"
+                    android:textColor="@color/colorPrimaryVersion1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/validacion_creamas_dia2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_card_resultados_categorias"
+        android:layout_below="@+id/txtinfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.AgendaDiaFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnAtras"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_atras"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/textViewDia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dia 1 - Lunes 24"
+            android:textSize="30sp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_horizontal" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:text=" "
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/txtinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/listAgendaDia" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<title>Cargar Imagenes</title>
+</head>
+
+	<body>
+		<form method='POST' action="recibirImagenEmpresaRegistrada.php" enctype="multipart/form-data">
+		
+			<label>Ingresa Imagen</label>
+			<input type='file' name="imagen"/>
+			<br/><br/>	
+			
+			<label>Ingresa id</label>
+			<input type='text' name="id"/>
+			<br/><br/>
+			
+			<label>Ingresa Nombre</label>
+			<input type='text' name="nombre"/>
+			<br/><br/>
+			
+			<label>Descripcion</label><br/>
+			<TEXTAREA COLS=30 ROWS=10 NAME="descripcion">
+			</TEXTAREA> 
+			<br/><br/>
+		
+			<button type="submit" name="btn"> Agregar </button>
+		
+		</form>
+	</body>
+</html>
+
+

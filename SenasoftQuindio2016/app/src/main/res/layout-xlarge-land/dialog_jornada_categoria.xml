@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp">
+
+        <ImageButton
+            android:id="@+id/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Salir"
+            android:src="@drawable/ic_salir"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:id="@+id/textViewCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Algoritmia"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewJornada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jornada_uno"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:gravity="left"
+        android:background="@android:color/white"
+        android:elevation="5dp"/>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textDescripcion"
+                android:text="Las temáticas a trabajar en esta jornada son: Estructuras  Condicionales:  Simples,  Dobles,  compuestas y  múltiples (casos) \nEstructuras Repetitivas: Mientras, Para, Repita y Ciclos Anidados.\nArray Unidimensionales, Array Multidimensionales"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

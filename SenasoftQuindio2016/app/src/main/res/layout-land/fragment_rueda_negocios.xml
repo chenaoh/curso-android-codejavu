@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.RuedaNegociosFragment">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_object_creamas"
+                            android:layout_marginTop="3dp"/>
+
+                        <TextView
+                            android:id="@+id/textViewDQueEs2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Objetivos"
+                            android:textSize="25sp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorAccent"
+                            android:gravity="left" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texto_creamas_objetivos"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="91dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/creamaslogo"
+                        android:layout_marginLeft="-40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.10" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_info_creamas"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewDQueEs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Qué es?"
+                        android:textSize="25sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="left" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_creamas_que_es"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_estrategia_creamas"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewDQueEs3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Estrategia"
+                        android:textSize="25sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="left" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_creamas_descripcion"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

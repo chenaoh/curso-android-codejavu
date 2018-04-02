@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/contenedorInformacionGralTablet10"
+    tools:context="co.quindio.sena.senasoftquindio2016.fragments.ContenedorInformacionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/logo_color"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="60dp"/>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cardInformacion"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        card_view:cardBackgroundColor="@color/colorBtnGplus"
+                        card_view:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgLogo1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:src="@mipmap/ic_info_creamas" />
+
+                                <TextView
+                                    android:id="@+id/idTextInformacion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/item_informacion_que_es"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:textSize="15sp"
+                                    android:layout_marginRight="20dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:text="Registrate"
+                                android:src="@mipmap/ic_adelante_img"
+                                android:background="@android:color/transparent"
+                                android:id="@+id/iconoAdelante1"
+                                android:layout_marginLeft="20dp"
+                                android:layout_alignBottom="@+id/linearLayout"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cardLugar"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        card_view:cardBackgroundColor="@color/colorBtnGplus"
+                        card_view:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgLogo3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:src="@mipmap/ic_object_creamas" />
+
+
+                                <TextView
+                                    android:id="@+id/idTextLugar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/item_informacion_lugar"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:textSize="15sp"
+                                    android:layout_marginRight="20dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:text="Registrate"
+                                android:src="@mipmap/ic_adelante_img"
+                                android:background="@android:color/transparent"
+                                android:id="@+id/iconoAdelante3"
+                                android:layout_marginLeft="20dp"
+                                android:layout_alignBottom="@+id/linearLayout"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cardMapa"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        card_view:cardBackgroundColor="@color/colorBtnGplus"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgLogo2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:src="@mipmap/ic_estrategia_creamas" />
+
+
+                                <TextView
+                                    android:id="@+id/idTextParticipantes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="MAPA"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:textSize="15sp"
+                                    android:layout_marginRight="20dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:text="Registrate"
+                                android:src="@mipmap/ic_adelante_img"
+                                android:background="@android:color/transparent"
+                                android:id="@+id/iconoAdelante2"
+                                android:layout_marginLeft="20dp"
+                                android:layout_alignBottom="@+id/linearLayout"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" "
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fragContenidoTablet10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+</LinearLayout>
